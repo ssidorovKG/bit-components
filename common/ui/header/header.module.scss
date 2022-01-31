@@ -1,0 +1,28 @@
+.grid {
+  width: 792px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titles {
+  margin: 28px 0;
+
+  flex-grow: 1;
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: normal
+  }
+}
+
+.tabs {
+  border-top: 1px solid grey;
+
+}

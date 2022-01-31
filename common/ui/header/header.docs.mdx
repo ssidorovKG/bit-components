@@ -1,0 +1,54 @@
+---
+description: A Header component.
+---
+
+import {Header} from './header';
+
+A customisable header component. Can be configured to include Subtitle, Back Button, CTA, back\forward navigation, Tab navigation.
+
+### Component usage
+```js
+<Header
+  title={"Title of the Page"}
+  subTitle={"Subtitle • Subtitle"}
+  backArrowUrl={'https://example.com'}
+  actionButtonCallback={() => {
+    alert('Action!')
+  }}
+  navButtonsCallbacks={
+    {
+      back: () => alert('back'),
+      forward: () => alert('forward')
+    }
+  }
+  moreButtonCallback={() => {
+    alert('more')
+  }}
+  tabsCallback={(activeTab) => {
+    alert(activeTab);
+  }}/>
+```
+
+### Render hello world!
+
+```js live
+<Header
+  title={"Title of the Page"}
+  subTitle={"Subtitle • Subtitle"}
+  backArrowUrl={'https://example.com'}
+  actionButtonCallback={() => {
+    alert('Action!')
+  }}
+  navButtonsCallbacks={
+    {
+      back: () => alert('back'),
+      forward: () => alert('forward')
+    }
+  }
+  moreButtonCallback={() => {
+    alert('more')
+  }}
+  tabsCallback={(activeTab) => {
+    alert(activeTab);
+  }}/>
+```
